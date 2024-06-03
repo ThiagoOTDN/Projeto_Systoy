@@ -1,0 +1,50 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 357
+  HorizontalOffset = 256
+  VerticalOffset = 179
+  Width = 601
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Catalog = 'techbuddy'
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 3307
+    Database = 'techbuddy'
+    User = 'root'
+    Password = '71526483t'
+    Protocol = 'MariaDB-10'
+    LibraryLocation = 'C:\Program Files\HeidiSQL\libmariadb.dll'
+    Left = 216
+    Top = 120
+  end
+  object ZTable1: TZTable
+    Connection = ZConnection1
+    Active = True
+    TableName = 'cad_funcionarios'
+    Left = 352
+    Top = 131
+  end
+  object ZTable2: TZTable
+    Connection = ZConnection1
+    Active = True
+    TableName = 'cad_produtos'
+    Left = 288
+    Top = 74
+  end
+  object DataSource1: TDataSource
+    DataSet = ZTable1
+    Left = 147
+    Top = 172
+  end
+  object DataSource2: TDataSource
+    DataSet = ZTable2
+    Left = 113
+    Top = 72
+  end
+end

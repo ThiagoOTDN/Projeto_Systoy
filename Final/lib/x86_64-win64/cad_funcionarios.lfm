@@ -1,0 +1,355 @@
+object Cad_FuncionariosF: TCad_FuncionariosF
+  Left = 249
+  Height = 870
+  Top = 114
+  Width = 1366
+  Caption = 'Cad_FuncionariosF'
+  ClientHeight = 870
+  ClientWidth = 1366
+  LCLVersion = '2.2.0.4'
+  WindowState = wsMaximized
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 100
+    Top = 770
+    Width = 1366
+    Align = alBottom
+    Color = clWindow
+    Columns = <>
+    DataSource = DataModule1.DataSource1
+    TabOrder = 0
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 0
+    Width = 1366
+    Align = alTop
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 1366
+    DataSource = DataModule1.DataSource1
+    Options = []
+    TabOrder = 1
+  end
+  object DBEdit1: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 104
+    Width = 840
+    DataField = 'Nome'
+    DataSource = DataModule1.DataSource1
+    MaxLength = 50
+    TabOrder = 2
+  end
+  object DBEdit2: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 184
+    Width = 840
+    DataField = 'CPF'
+    DataSource = DataModule1.DataSource1
+    MaxLength = 14
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 23
+    Top = 72
+    Width = 47
+    Caption = 'Nome'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 23
+    Top = 144
+    Width = 29
+    Caption = 'CPF'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object DBEdit5: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 248
+    Width = 840
+    DataField = 'Complemento'
+    DataSource = DataModule1.DataSource1
+    DoubleBuffered = True
+    MaxLength = 50
+    ParentDoubleBuffered = False
+    TabOrder = 4
+  end
+  object DBEdit6: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 648
+    Width = 840
+    DataField = 'CEP'
+    DataSource = DataModule1.DataSource1
+    Alignment = taRightJustify
+    MaxLength = 0
+    TabOrder = 5
+  end
+  object DBEdit7: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 320
+    Width = 840
+    DataField = 'Rua'
+    DataSource = DataModule1.DataSource1
+    MaxLength = 50
+    TabOrder = 6
+  end
+  object DBEdit8: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 396
+    Width = 840
+    DataField = 'Número'
+    DataSource = DataModule1.DataSource1
+    MaxLength = 5
+    TabOrder = 7
+  end
+  object DBEdit9: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 464
+    Width = 840
+    DataField = 'Cidade'
+    DataSource = DataModule1.DataSource1
+    MaxLength = 25
+    TabOrder = 8
+  end
+  object DBEdit10: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 528
+    Width = 840
+    DataField = 'Bairro'
+    DataSource = DataModule1.DataSource1
+    MaxLength = 50
+    TabOrder = 9
+  end
+  object DBEdit11: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 592
+    Width = 840
+    DataField = 'Telefone'
+    DataSource = DataModule1.DataSource1
+    Alignment = taRightJustify
+    MaxLength = 0
+    TabOrder = 10
+  end
+  object DBEdit12: TDBEdit
+    Left = 8
+    Height = 23
+    Top = 728
+    Width = 840
+    DataField = 'Código'
+    DataSource = DataModule1.DataSource1
+    ReadOnly = True
+    Alignment = taRightJustify
+    MaxLength = 0
+    TabOrder = 11
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 23
+    Top = 688
+    Width = 55
+    Caption = 'Código'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 23
+    Top = 560
+    Width = 63
+    Caption = 'Telefone'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 936
+    Height = 23
+    Top = 104
+    Width = 20
+    Caption = 'UF'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 23
+    Top = 432
+    Width = 53
+    Caption = 'Cidade'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 16
+    Height = 23
+    Top = 280
+    Width = 29
+    Caption = 'Rua'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 16
+    Height = 23
+    Top = 496
+    Width = 45
+    Caption = 'Bairro'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 16
+    Height = 23
+    Top = 360
+    Width = 63
+    Caption = 'Número'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 8
+    Height = 23
+    Top = 216
+    Width = 109
+    Caption = 'Complemento'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 16
+    Height = 23
+    Top = 616
+    Width = 30
+    Caption = 'CEP'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object DBComboBox1: TDBComboBox
+    Left = 976
+    Height = 23
+    Top = 104
+    Width = 100
+    DataField = 'UF'
+    DataSource = DataModule1.DataSource1
+    ItemHeight = 15
+    Items.Strings = (
+      'AC'
+      'AL'
+      'AM'
+      'AP'
+      'BA'
+      'CE'
+      'DF'
+      'ES'
+      'GO'
+      'MA'
+      'MG'
+      'MS'
+      'MT'
+      'PA'
+      'PB'
+      'PE'
+      'PI'
+      'PR'
+      'RJ'
+      'RN'
+      'RO'
+      'RR'
+      'RS'
+      'SC'
+      'SE'
+      'SP'
+      'TO'
+    )
+    MaxLength = 0
+    OnChange = DBComboBox1Change
+    TabOrder = 12
+  end
+  object DBRadioGroup1: TDBRadioGroup
+    Left = 976
+    Height = 105
+    Top = 176
+    Width = 185
+    AutoFill = True
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    DataField = 'Sexo'
+    DataSource = DataModule1.DataSource1
+    Items.Strings = (
+      'Masculino'
+      'Feminino'
+      'Prefiro não dizer'
+      'Aos fins de semana'
+    )
+    TabOrder = 13
+  end
+  object Label12: TLabel
+    Left = 928
+    Height = 23
+    Top = 192
+    Width = 36
+    Caption = 'Sexo'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+end
